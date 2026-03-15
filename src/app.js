@@ -15,9 +15,16 @@ function App() {
   ];
 
   useEffect(() => {
+    console.log('Attempting to load:', lottieUrls[currentIndex]);
     fetch(lottieUrls[currentIndex])
-      .then(response => response.json())
-      .then(data => setAnimationData(data))
+      .then(response => {
+        console.log('Response status:', response.status);
+        return response.json();
+      })
+      .then(data => {
+        console.log('Animation loaded successfully');
+        setAnimationData(data);
+      })
       .catch(error => console.error('Error loading Lottie:', error));
   }, [currentIndex]);
 
