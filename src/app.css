@@ -20,7 +20,14 @@ body, html {
 }
 
 .lottie-container {
-  width: 100%;
-  max-width: 1200px;
-  height: auto;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lottie-container > div {
+  height: 100%;
+  width: auto !important;
 }
