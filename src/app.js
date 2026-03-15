@@ -3,11 +3,11 @@ import Lottie from 'lottie-react';
 import './App.css';
 
 const lottieUrls = [
-  '/lotties/holding-stage.json',
-  '/lotties/display-period.json',
-  '/lotties/open-trading.json',
-  '/lotties/now-trading.json',
-  '/lotties/pre-launch.json'
+  `${process.env.PUBLIC_URL}/lotties/holding-stage.json`,
+  `${process.env.PUBLIC_URL}/lotties/display-period.json`,
+  `${process.env.PUBLIC_URL}/lotties/open-trading.json`,
+  `${process.env.PUBLIC_URL}/lotties/now-trading.json`,
+  `${process.env.PUBLIC_URL}/lotties/pre-launch.json`
 ];
 
 function App() {
