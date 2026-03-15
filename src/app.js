@@ -19,6 +19,9 @@ function App() {
     fetch(lottieUrls[currentIndex])
       .then(response => {
         console.log('Response status:', response.status);
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
         return response.json();
       })
       .then(data => {
