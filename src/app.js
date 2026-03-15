@@ -7,11 +7,11 @@ function App() {
   const [animationData, setAnimationData] = useState(null);
 
   const lottieUrls = [
-    'https://raw.githubusercontent.com/nasdaqbrandstudio/ipo-lotties/main/1_IPO_2024_Starburst_v2_Green.json',
-    'https://raw.githubusercontent.com/nasdaqbrandstudio/ipo-lotties/main/2_IPO_2024_Mosaic_v2_Green.json',
-    'https://raw.githubusercontent.com/nasdaqbrandstudio/ipo-lotties/main/3_IPO_2024_Rings_v2_Green.json',
-    'https://raw.githubusercontent.com/nasdaqbrandstudio/ipo-lotties/main/4_IPO_2024_Squares_v2_Green.json',
-    'https://raw.githubusercontent.com/nasdaqbrandstudio/ipo-lotties/main/5_IPO_2024_Triangles_v2_Green.json'
+    '/lotties/holding-stage.json',
+    '/lotties/display-period.json',
+    '/lotties/open-trading.json',
+    '/lotties/now-trading.json',
+    '/lotties/pre-launch.json'
   ];
 
   useEffect(() => {
@@ -19,7 +19,7 @@ function App() {
       .then(response => response.json())
       .then(data => setAnimationData(data))
       .catch(error => console.error('Error loading Lottie:', error));
-  }, [currentIndex]); // This should only depend on currentIndex
+  }, [currentIndex]);
 
   const handleClick = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % lottieUrls.length);
