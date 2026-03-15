@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ipo-lotties/static/css/main.3638e16d.css",
+    "main.js": "/ipo-lotties/static/js/main.692b3b43.js",
+    "index.html": "/ipo-lotties/index.html",
+    "main.3638e16d.css.map": "/ipo-lotties/static/css/main.3638e16d.css.map",
+    "main.692b3b43.js.map": "/ipo-lotties/static/js/main.692b3b43.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3638e16d.css",
+    "static/js/main.692b3b43.js"
+  ]
+}
