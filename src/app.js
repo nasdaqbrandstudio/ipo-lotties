@@ -2,17 +2,17 @@ import React, { useState, useEffect } from 'react';
 import Lottie from 'lottie-react';
 import './App.css';
 
+const lottieUrls = [
+  '/lotties/holding-stage.json',
+  '/lotties/display-period.json',
+  '/lotties/open-trading.json',
+  '/lotties/now-trading.json',
+  '/lotties/pre-launch.json'
+];
+
 function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animationData, setAnimationData] = useState(null);
-
-  const lottieUrls = [
-    '/lotties/holding-stage.json',
-    '/lotties/display-period.json',
-    '/lotties/open-trading.json',
-    '/lotties/now-trading.json',
-    '/lotties/pre-launch.json'
-  ];
 
   useEffect(() => {
     console.log('Attempting to load:', lottieUrls[currentIndex]);
