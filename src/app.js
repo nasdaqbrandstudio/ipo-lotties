@@ -19,7 +19,7 @@ function App() {
       .then(response => response.json())
       .then(data => setAnimationData(data))
       .catch(error => console.error('Error loading Lottie:', error));
-  }, [currentIndex]);
+  }, [currentIndex]); // This should only depend on currentIndex
 
   const handleClick = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % lottieUrls.length);
